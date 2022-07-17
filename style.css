@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+    /* overflow-x:hidden ; */
+}
+body{
+    margin: 0 auto;
+}
+
+a{ text-decoration: none; }
+/* img{ max-width: 100%; } */
+.flex{ display:flex; }
+
+
+/*Navbar*/
+.top_section{
+    width:100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_section--btn{
+    padding: 0.3rem;
+    border-radius: 6rem;
+    text-align: center;
+    color: white;
+}
+
+.hove--top:hover,
+.hove--top:focus {
+    transition: 1s;
+    box-shadow: inset 0 -3.25em 0 0 white;
+    color: black;
+}
+
+
+.logo img{
+    height: 6.5vh;
+    filter: grayscale(100%);
+}
+
+.right--top_section{
+    gap: 3vw;
+    font-size:1.5rem;
+    margin-right: 2rem;
+}
+
+
+/* Main screen content */
+.gif_main{
+    background-image: url(./IMG/valo-main.jpg);
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap:6rem;
+    color: white;
+    /* position: relative; */
+    background-position: center;
+}
+
+.gif_main p{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top:1rem ;
+}
+
+.gif_main h1{
+    font-size: 9rem;
+    letter-spacing: 3rem;
+    margin: 0 auto;
+    /* text-align: center; */
+    
+}
+
+.gif_main h1:after
+{
+    content: '';
+    margin-left: -2.9rem;
+  
+}
+
+
+
+/* About game */
+.about{
+    margin: 5rem 4rem 0 4rem;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+.left--about{
+    width:60% ;
+}
+
+.left--about h1{
+    font-size: 5rem;
+}
+
+.left--about p{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.left--about a{
+    padding: .8rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    border:solid 1px black;
+}
+
+.hove--about:hover,
+.hove--about:focus {
+  box-shadow: 
+    inset -3.5em 0 0 0 black,
+    inset 3.5em 0 0 0 black;  
+    color: white;
+    transition: 1s;
+}
+
+.about img{
+    width: 35%;
+    filter: grayscale(100%);
+}
+
+
+/* Agents */
+.agent--wrap{
+    background-color: black;
+}
+
+.agent{
+    padding: 3.5rem 0 3.5rem 0;
+    margin: 5rem 4rem 0 4rem;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    
+}
+
+.agent img{
+    width: 40%;
+    filter: grayscale(100%);
+}
+
+.right--agent{
+    width:50%;
+}
+
+.right--agent h1{
+    font-size: 5rem;
+}
+
+.right--agent p{
+    margin-top: 2rem;
+    font-size: 1.35rem;
+    margin-bottom: 3rem;
+}
+
+.agent--img img{
+    width: 1rem;
+}
+
+.ul-bspace p{
+    margin-bottom: 0;
+}
+
+.agent li{
+    text-align: left;
+}
+
+.controller img{
+    width: 1rem;
+}
+
+.duelist img{
+    width: 1rem;
+}
+
+.initiator img{
+    width: 1rem;
+}
+
+.sentinels img{
+    width: 1rem;
+}
+
+.btn--wrap{
+    margin-top: 2rem;
+}
+
+.right--agent a{
+    padding: .8rem;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    border:solid 1px white;
+}
+
+.hove--agent:hover,
+.hove--agent:focus { 
+  box-shadow: inset 0 0 0 2em white; 
+    color: black;
+    transition: 1s;
+}
+
+/*Map*/
+.map{
+    margin: 5rem 4rem 3rem 4rem;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.map img{
+    filter: grayscale(100%);
+    width:55%;
+}
+
+.left--map{
+    width:40%;
+}
+
+.left--map h1{
+    font-size: 4rem;
+}
+
+.left--map p{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.left--map a{
+    padding: .6rem;
+    background-color: white;
+    color: black;
+    font-size: 1.4rem;
+    border:solid 1px black;
+}
+
+.hove--map:hover,
+.hove--map:focus{
+    box-shadow: inset 7.36em 0 0 0 black;
+    color: white;
+    transition: 1s;
+}
+
+
+/*Footer*/
+.footer{
+    height: 10vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer p{
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    position: relative;
+    margin:0.9rem 0 0.9rem 0;
+}
+
+
+
+/*Media queries*/
+@media (max-width: 480px) {
+    html {
+        font-size: 35%;
+    }
+    body{
+        overflow-x: hidden;
+
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+
+    .top_section{
+        padding-left: 5px;
+        padding-right: 5px;
+        
+    }
+
+    .right--top_section{
+        font-size: 20px;
+    }
+    .gif_main h1{
+        text-align: center;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    html {
+        font-size: 50%;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    html {
+       font-size: 75%;
+}
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    html {
+        font-size: 100%;
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    html {
+        font-size: 120%;
+    }
+}
